@@ -124,3 +124,37 @@ li.item {
   background-color: rgb(186, 217, 238);
   background-image: url(../images/cat.png);
 }
+
+.rocket-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  background-color: teal;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+/* .rocket {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url(../images/rocket.svg);
+  background-size: contain;
+} */
+
+.rocket-link:hover,
+.rocket-link:focus {
+  background-color: palevioletred;
+}
+
+.rocket-link::before {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url(../images/rocket.svg);
+  background-size: contain;
+  content: "";
+}
