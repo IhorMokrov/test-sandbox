@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+li.item {
+  list-style: none;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-list-item {
+  display: flex;
+  min-width: 50px;
+  height: 50px;
+  padding: 5px 15px;
+  font-size: 26px;
+  background-color: antiquewhite;
+  align-items: center;
+  border: 1px solid rgb(172, 172, 172);
+  border-radius: 3px;
+}
+
+.header-list-item.primary-button {
+  transform: scale(1.1);
+  border: 1px solid grey;
+}
+
+.header-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.header-list-item:hover,
+.header-list-item:focus {
+  background-color: cyan;
+}
+
+.header-list-item .link {
+  text-decoration: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
