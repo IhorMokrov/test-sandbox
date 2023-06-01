@@ -18,66 +18,10 @@
 }
 
 .container {
-  flex-basis: calc(50% - 5px);
+  padding: 10px;
+  width: 200px;
   height: 200px;
-
-  outline: 1px solid tomato;
+  border: 0.1px dashed tomato;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.container:not(:nth-child(2n)) {
-  margin-right: 10px;
-}
-
-.container:not(:nth-last-child(-n + 2)) {
-  margin-bottom: 10px;
-}
-
-.container:nth-child(1) {
-  background-image: repeating-linear-gradient(
-    to right,
-    var(--start-color),
-    var(--start-color) 20px,
-    var(--end-color) 20px,
-    var(--end-color) 40px
-  );
-}
-
-.container:nth-child(3) {
-  background-image: repeating-radial-gradient(
-    circle at center,
-    var(--start-color),
-    var(--start-color) 20px,
-    var(--end-color) 20px,
-    var(--end-color) 40px
-  );
-}
-
-.container:nth-child(4) {
-  background-image: repeating-radial-gradient(
-    circle at right top,
-    var(--start-color),
-    var(--start-color) 20px,
-    var(--end-color) 20px,
-    var(--end-color) 40px
-  );
-}
-
-.container:nth-child(2) {
-  background-image: repeating-linear-gradient(
-    to top right,
-    var(--start-color),
-    var(--start-color) 20px,
-    var(--end-color) 20px,
-    var(--end-color) 40px
-  );
-}
-
-/* 
-background-image: repeating-linear-gradient(
-    to right,
-    var(--start-color),
-    var(--start-color) 20px,
-    var(--end-color) 20px,
-    var(--end-color) 40px
-  );
-   */
