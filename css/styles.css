@@ -61,3 +61,18 @@
   background-size: cover;
   background-size: no-repeat;
 }
+
+.window {
+  display: block;
+  width: 155px;
+  height: 146px;
+  background-color: antiquewhite;
+  outline: 1px solid tomato;
+}
+
+.usb {
+  display: block;
+  width: 125px;
+  height: 250px;
+  background-color: aquamarine;
+}
