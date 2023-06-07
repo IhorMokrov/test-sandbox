@@ -17,23 +17,6 @@
   padding: 10px;
 }
 
-.container {
-  padding: 10px;
-  width: 200px;
-  height: 200px;
-  border: 0.1px dashed tomato;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.actions {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  outline: 1px solid black;
-  list-style: none;
-}
-
 .button {
   padding: 0;
   border: none;
@@ -52,27 +35,12 @@
   fill: currentColor;
 }
 
-.test-icon {
-  width: 100px;
-  height: 100px;
-  outline: 1px solid black;
-
-  background-image: url("../images/bg-strite.svg#qwe");
-  background-size: cover;
-  background-size: no-repeat;
-}
-
-.window {
-  display: block;
-  width: 155px;
-  height: 146px;
-  background-color: antiquewhite;
+.link-item {
+  display: inline-block;
+  text-align: center;
+  width: 90px;
+  height: 90px;
+  background-color: gainsboro;
+  border-radius: 50% 50%;
   outline: 1px solid tomato;
-}
-
-.usb {
-  display: block;
-  width: 125px;
-  height: 250px;
-  background-color: aquamarine;
 }
