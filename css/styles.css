@@ -28,19 +28,26 @@
 }
 
 .button:hover {
-  color: #fff;
+  /* color: #fff; */
 }
 
 .button-icon {
-  fill: currentColor;
+  fill: 2a2a2a;
 }
 
 .link-item {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   text-align: center;
-  width: 90px;
-  height: 90px;
-  background-color: gainsboro;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: teal;
   border-radius: 50% 50%;
-  outline: 1px solid tomato;
+
+  /* outline: 1px solid teal; */
+}
+
+.link-icon {
+  fill: 2a2a2a;
 }
