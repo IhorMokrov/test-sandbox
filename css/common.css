@@ -48,3 +48,17 @@ li.item {
   padding-top: 8px;
   padding-bottom: 8px;
 }
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: flex-start;
+
+  width: 600px;
+
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid grey;
+  padding: 10px;
+}

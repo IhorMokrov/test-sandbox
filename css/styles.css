@@ -1,53 +1,74 @@
-:root {
-  --start-color: red;
-  --end-color: blue;
+li {
+  list-style: none;
 }
 
-.wrapper {
-  display: flex;
-  flex-wrap: wrap;
-
-  align-items: flex-start;
-
-  width: 600px;
-
-  margin-left: auto;
-  margin-right: auto;
-  outline: 1px solid grey;
-  padding: 10px;
+.item + .item {
+  margin-left: 20px;
 }
 
-.button {
-  padding: 0;
-  border: none;
+.item {
+  display: block;
+  background-color: bisque;
+  outline: 1px solid #ffce91;
+  padding: 5px 10px 5px 10px;
+
   width: 100px;
+}
+
+.head-container {
+  position: relative;
+  width: 1200px;
   height: 100px;
-  color: #2a2a2a;
-  border-radius: 50%;
+  outline: 1px solid tomato;
+}
+
+.current::after {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 8px;
   background-color: teal;
 }
 
-.button:hover {
-  /* color: #fff; */
-}
-
-.button-icon {
-  fill: 2a2a2a;
-}
-
-.link-item {
+.list {
   display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  background-color: teal;
-  border-radius: 50% 50%;
-
-  /* outline: 1px solid teal; */
+  /* width: 300px; */
 }
 
-.link-icon {
-  fill: 2a2a2a;
+.current {
+  display: inline-block;
+  width: inherit;
+}
+
+.margin-top-container {
+  margin-top: 60px;
+}
+
+.text-link {
+  position: relative;
+
+  text-decoration: none;
+  /* display: inline-block; */
+}
+
+.text-link::after {
+  position: absolute;
+
+  margin-bottom: 40px;
+  bottom: 0;
+  left: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: red;
+}
+
+.overflow-container {
+  /* display: inline-block; */
+  outline: 1px solid tomato;
+
+  height: 40px;
 }
