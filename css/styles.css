@@ -1,74 +1,48 @@
-li {
-  list-style: none;
-}
+.sticky-one {
+  position: sticky;
 
-.item + .item {
-  margin-left: 20px;
-}
-
-.item {
-  display: block;
-  background-color: bisque;
-  outline: 1px solid #ffce91;
-  padding: 5px 10px 5px 10px;
-
-  width: 100px;
-}
-
-.head-container {
-  position: relative;
-  width: 1200px;
-  height: 100px;
-  outline: 1px solid tomato;
-}
-
-.current::after {
-  position: absolute;
-  bottom: 0;
-  display: block;
-  content: "";
-  width: 100%;
-  height: 8px;
+  color: white;
+  top: 0;
   background-color: teal;
+  text-align: center;
+  margin: 0;
 }
 
-.list {
-  display: flex;
-  /* width: 300px; */
+.sticky-two {
+  position: sticky;
+  top: 0;
+  background-color: aqua;
+  text-align: center;
 }
 
-.current {
-  display: inline-block;
-  width: inherit;
+p {
+  margin: 0;
 }
 
-.margin-top-container {
-  margin-top: 60px;
-}
-
-.text-link {
+.first-section {
   position: relative;
-
-  text-decoration: none;
-  /* display: inline-block; */
 }
 
-.text-link::after {
-  position: absolute;
-
-  margin-bottom: 40px;
-  bottom: 0;
-  left: 0;
-  content: "";
-  display: block;
-  height: 4px;
-  width: 100%;
-  background-color: red;
+.sticky-two {
+  margin: 0;
 }
 
-.overflow-container {
-  /* display: inline-block; */
-  outline: 1px solid tomato;
+@keyframes changeBgColor {
+  0% {
+    background-color: teal;
+  }
 
-  height: 40px;
+  50% {
+    background-color: orange;
+  }
+
+  100% {
+    background-color: deepskyblue;
+  }
+}
+
+.first-section-paragraph:hover {
+  animation-name: changeBgColor;
+  animation-duration: 2500ms;
+  animation-iteration-count: 3;
 }
