@@ -1,48 +1,17 @@
-.sticky-one {
-  position: sticky;
-
-  color: white;
-  top: 0;
-  background-color: teal;
-  text-align: center;
-  margin: 0;
+.notification {
+  font-size: 24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.sticky-two {
-  position: sticky;
-  top: 0;
-  background-color: aqua;
-  text-align: center;
+.notification-success {
+  background-color: green;
 }
 
-p {
-  margin: 0;
+.notification-warning {
+  background-color: yellow;
 }
 
-.first-section {
-  position: relative;
-}
-
-.sticky-two {
-  margin: 0;
-}
-
-@keyframes changeBgColor {
-  0% {
-    background-color: teal;
-  }
-
-  50% {
-    background-color: orange;
-  }
-
-  100% {
-    background-color: deepskyblue;
-  }
-}
-
-.first-section-paragraph:hover {
-  animation-name: changeBgColor;
-  animation-duration: 2500ms;
-  animation-iteration-count: 3;
+.notification-error {
+  background-color: #ff0000;
 }
