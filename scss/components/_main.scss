@@ -21,3 +21,12 @@
   background-size: auto;
   background-attachment: fixed;
 }
+
+.section {
+  display: block;
+  height: 180px;
+  outline: 1px solid #21f821;
+}
+
+$colors: "#bef5be", "#abfcab", "#8ef88e", "#6bf86b", "#46f346", "#21f821";
+@include colorize($colors, ".colorized-section");
