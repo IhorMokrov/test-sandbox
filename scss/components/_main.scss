@@ -22,11 +22,53 @@
   background-attachment: fixed;
 }
 
-.section {
+.colorized-section {
   display: block;
-  height: 180px;
-  outline: 1px solid #21f821;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80px;
+  // outline: 1px solid tomato;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 480px) {
+    & {
+      width: 480px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      // width: 768px;
+      flex-basis: 50%;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    & {
+      // width: 1200px;
+      flex-basis: calc(100% / 3);
+    }
+  }
 }
 
-$colors: "#bef5be", "#abfcab", "#8ef88e", "#6bf86b", "#46f346", "#21f821";
+$colors: #76bce4, #b7a3bf, #bee086, #6bf86b, #46f346, #21f821;
 @include colorize($colors, ".colorized-section");
+
+.colorized-container {
+  @media screen and (min-width: 768px) {
+    & {
+      display: flex;
+      flex-wrap: wrap;
+      // width: 768px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    & {
+      // width: 1200px;
+    }
+  }
+}
