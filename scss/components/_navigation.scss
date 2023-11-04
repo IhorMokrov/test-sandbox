@@ -1,0 +1,33 @@
+.navigation {
+  display: none;
+  position: absolute;
+
+  left: 0;
+  width: 100%;
+  color: #cfc2c2;
+}
+
+.navigation__list {
+  margin: 0;
+  width: 100%;
+  list-style: none;
+  background-color: #aa5a5a;
+  border: 2px solid #a52a2a;
+}
+
+.navigation__item {
+  font-size: 1.4em;
+}
+
+// Mobile menu icons
+.button-mobile-menu {
+  //   position: absolute;
+  //   top: 50%;
+  //   right: 2%;
+  //   transform: translateY(-50%);
+
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  fill: rgb(0, 0, 0);
+}

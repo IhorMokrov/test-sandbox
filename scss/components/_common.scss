@@ -5,11 +5,21 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 li.item {
   list-style: none;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
 }
 
 .header-list {
