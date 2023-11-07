@@ -20,6 +20,7 @@ body {
   position: relative;
   display: flex;
   justify-content: space-around;
+  z-index: 2;
 }
 
 .header-list {
@@ -154,6 +155,7 @@ body {
   left: 0;
   width: 100%;
   color: #cfc2c2;
+  z-index: 3;
 }
 
 .navigation__list {
