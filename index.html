@@ -1,53 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css">
-</head>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <ul class="header-list">
-            <li class="header-list-item primary-button"><a class="link" href="./index.html">Main</a></li>
-            <li class="header-list-item"><a class="link" href="./second-page.html">Second Page</a></li>
+      <ul class="header-list">
+        <li class="header-list-item primary-button">
+          <a class="link" href="./index.html">Main</a>
+        </li>
+        <li class="header-list-item">
+          <a class="link" href="./second-page.html">Second Page</a>
+        </li>
+      </ul>
+
+      <button type="button" class="button-mobile-menu" id="burger-button">
+        <svg class="button-mobile-menu__icon" width="48" height="48">
+          <!-- <use href="./images/mobile-menu-icons/mobile-menu.svg#icon-cross"></use> -->
+          <use
+            href="./images/mobile-menu-icons/mobile-menu.svg#icon-menu"
+          ></use>
+        </svg>
+      </button>
+
+      <nav class="navigation" id="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">Home</li>
+          <li class="navigation__item">Contacts</li>
+          <li class="navigation__item">What we doing</li>
+          <li class="navigation__item">Fourth</li>
+          <li class="navigation__item">Fifth</li>
         </ul>
-
-        <button type="button" class="button-mobile-menu" id="burger-button">
-            <svg class="button-mobile-menu__icon" width="48" height="48">
-                <!-- <use href="./images/mobile-menu-icons/mobile-menu.svg#icon-cross"></use> -->
-                <use href="./images/mobile-menu-icons/mobile-menu.svg#icon-menu"></use>
-            </svg>
-        </button>
-
-        <nav class="navigation" id="navigation">
-            <ul class="navigation__list">
-                <li class="navigation__item">Home</li>
-                <li class="navigation__item">What we doing</li>
-                <li class="navigation__item">Contacts</li>
-            </ul>
-        </nav>
+      </nav>
     </header>
 
-
     <div class="colorized-container">
-        <div class="colorized-section">1</div>
-        <div class="colorized-section">
-            <div class="relative">
-                <div class="absolute"></div>
-            </div>
+      <div class="colorized-section">1</div>
+      <div class="colorized-section">
+        <div class="relative">
+          <div class="absolute"></div>
         </div>
-        <div class="colorized-section">3</div>
-        <div class="colorized-section">4</div>
-        <div class="colorized-section">5</div>
-        <div class="colorized-section">6</div>
+      </div>
+      <div class="colorized-section">3</div>
+      <div class="colorized-section">4</div>
+      <div class="colorized-section">5</div>
+      <div class="colorized-section">6</div>
     </div>
 
     <script src="./script.js"></script>
-
-</body>
-
+  </body>
 </html>
