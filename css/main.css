@@ -23,6 +23,7 @@ body {
   display: flex;
   justify-content: space-around;
   outline: 1px solid #0004ee;
+  z-index: 10;
 }
 
 .header-list {
@@ -158,8 +159,10 @@ body {
   width: 100%;
   color: #cfc2c2;
   opacity: 0.3;
+  transform: translateY(0%);
   pointer-events: none;
-  transition: opacity 2250ms, top 2250ms, bottom 2250ms;
+  transition: opacity 1250ms, transform 1250ms;
+  z-index: 3;
 }
 
 .navigation__list {
@@ -197,6 +200,7 @@ body {
 .absolute {
   position: absolute;
   left: 0;
+  transform: translateY(-10px);
   display: block;
   width: 50px;
   height: 50px;

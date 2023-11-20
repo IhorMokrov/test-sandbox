@@ -9,14 +9,12 @@
   color: #cfc2c2;
 
   opacity: 0.3;
-
+  transform: translateY(0%);
   pointer-events: none;
 
-  transition: opacity 2250ms, top 2250ms, bottom 2250ms ;
+  transition: opacity 1250ms, transform 1250ms;
 
-  // transition: transform 2250ms;
-
-  // z-index: 3;
+  z-index: 3;
 }
 
 .navigation__list {
