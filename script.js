@@ -1,21 +1,22 @@
 let burgerButton = document.getElementById('burger-button');
 let backdropMenu = document.getElementById('navigation');
 
-burgerButton.onclick = function () {
+burgerButton.addEventListener('click', function () {
 
-    if (backdropMenu.status !== 'open') {
-    backdropMenu.style.opacity = 1;
-        backdropMenu.style.pointerEvents = 'auto';  
+    if (backdropMenu.isOpen !== true) {
+        backdropMenu.style.opacity = 1;
+        backdropMenu.style.pointerEvents = 'auto';
         backdropMenu.style.transform = "translateY(100%)";
-        backdropMenu.status = 'open';
+         backdropMenu.style.zIndex = 3;
+        backdropMenu.isOpen = true;
         
-    } 
-    else {
-         backdropMenu.style.opacity = 0.2;
-        backdropMenu.style.pointerEvents = 'none';  
-           backdropMenu.style.transform = "translateY(0%)";
-    backdropMenu.status = 'closed';
     }
-   
+    else {
+        backdropMenu.style.opacity = 0.2;
+        backdropMenu.style.pointerEvents = 'none';
+        backdropMenu.style.transform = "translateY(0%)";
+        backdropMenu.style.zIndex = 2;
+        backdropMenu.isOpen = false;
+    }
+})
     
-}
