@@ -1,5 +1,5 @@
 .navigation {
-  display: block;
+  display: flex;
   position: absolute;
 
   bottom: 0;
@@ -8,12 +8,25 @@
   width: 100%;
   color: #cfc2c2;
 
+transform: translateY(0%);
+
   opacity: 0.3;
-  transform: translateY(0%);
+
   pointer-events: none;
 
-  transition: opacity 1250ms, transform 1250ms;
+  transition: opacity 1500ms ease-in-out, transform 500ms ;
 
+  // transition: transform 2250ms;
+
+  z-index: 2;
+
+    background-color: #aa5a5a;
+      border: 2px solid #a52a2a;
+}
+
+.header-container {
+  position: relative;
+  display: flex;
   z-index: 3;
 }
 
@@ -22,8 +35,7 @@
   width: 100%;
   // height: 100px;
   list-style: none;
-  background-color: #aa5a5a;
-  border: 2px solid #a52a2a;
+
 }
 
 .navigation__item {
