@@ -8,11 +8,13 @@
   width: 100%;
   color: #cfc2c2;
 
+transform: translateY(0%);
+
   opacity: 0.3;
 
   pointer-events: none;
 
-  transition: opacity 2250ms, top 2250ms, bottom 2250ms ;
+  transition: opacity 500ms, translate 500ms;
 
   // transition: transform 2250ms;
 
