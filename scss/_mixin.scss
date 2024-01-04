@@ -1,9 +1,0 @@
-@mixin colorize($colors, $class-name) {
-  @each $color in $colors {
-    $idx: index($colors, $color);
-
-    #{$class-name}:nth-child(#{$idx}) {
-      background-color: #{$color};
-    }
-  }
-}
